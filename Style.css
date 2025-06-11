@@ -1,45 +1,96 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0fdf4;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  color: #2f4f4f;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #2e7d32;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fff6;
+  color: #2f4f4f;
+  line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+  background-color: #1b5e20;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
   color: white;
-  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a5d6a7;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #388e3c;
+  color: white;
   text-align: center;
+  padding: 40px 20px;
 }
 
 section {
-  padding: 40px 20px;
-  max-width: 800px;
+  padding: 50px 20px;
+  max-width: 900px;
   margin: auto;
 }
 
-h1, h2 {
-  margin: 0 0 20px;
+h2 {
+  color: #1b5e20;
+  margin-bottom: 20px;
 }
 
+/* Cartões */
 .card {
   background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 25px;
   margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
+/* Botão */
+.btn {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Rodapé */
 footer {
   background-color: #e0f2f1;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 30px 20px;
+  font-size: 15px;
   color: #555;
 }
